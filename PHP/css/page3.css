@@ -1,0 +1,26 @@
+body {
+    padding-top: 5%;
+}
+.container {
+    background-color: #f7f7f7;
+    padding: 3%;
+}
+h5 {
+    color: #333365;
+}
+span {
+    color: #7a757a;
+}
+input[type=submit] {
+    margin-left: 45%;
+    background-color: #333365;
+    border: none;
+    color: white;
+    padding: 7px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+}
+

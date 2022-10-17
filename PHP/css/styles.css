@@ -1,0 +1,142 @@
+.footer-header {
+    display: none;
+    background-color: red;
+    text-align: center;
+    height: 40px;
+    color: white;
+    padding-top: 7px;
+    font-weight: bold;
+}
+
+.footer-body {
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.footer-logo {
+    width: 300px;
+    height: 102px;
+}
+
+.footer-col-1 {
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-header {
+        display: block;
+    }
+
+    .footer-logo {
+        width: 150px;
+        height: 51px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-col-1 {
+        display: none;
+    }
+
+    .footer-col-2 {
+        display: none;
+    }
+}
+
+
+
+.check-icon {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+
+
+}
+
+.path.circle {
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+}
+
+.path.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
+}
+
+.path.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+
+
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+.status {
+    display: none;
+}
+
+.status.active {
+    animation: scale-display .9s;
+    display: block;
+}
+
+@keyframes scale-display {
+    0% {
+        opacity: 0;
+        filter: opacity(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: opacity(1);
+    }
+}
